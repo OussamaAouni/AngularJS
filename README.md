@@ -1,2 +1,2 @@
 # ProPerso
-AngularJSProjeet
+AngularJSProject
