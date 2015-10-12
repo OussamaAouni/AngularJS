@@ -1,0 +1,40 @@
+var App = angular.module("AngularJSProject", ["ngResources"]);
+
+$scope.records = [{title: "one"}, {title: "two"}, {title: "three"}];
+var ctrl = function($scope, $http, $location){
+	$location.path("/AngularJSProject/index.html");
+};
+ctrl.$inject = ["$scope", "$http", "$location"];
+
+App.config(["$routeProvider", function($routes) {
+	
+	$route.when('/', {
+		templateUrl : '/templates/home.html',
+		controller : HomeCtrl
+	});
+	
+	$route.when('/register', {
+		templateUrl :  '/templates/register.html',
+		controller : RegisterCtrl
+	});
+	
+	$routes.otherwise({
+		redirectTo :'/'
+	});
+}]);
+
+var Somecontroller = function($scope, $http, $location){
+	$scope.value = "Somecontroller"; 
+};
+
+Somecontroller.$inject = ['$scope',  '$http', '$location'];
+
+//lets say you have <div>{{ someVar }}</div> inside your HTML.
+$scope.someVar = 'value';
+
+//if a scope digestion is already going on then it will get picked up and you won't
+//have to call the $scope.$apply() method
+if(!$scope.$$phase) { //this is used to prevent an overlap of scope digestion
+  $scope.$apply(); //this will kickstart angular to recognize the change
+}
+

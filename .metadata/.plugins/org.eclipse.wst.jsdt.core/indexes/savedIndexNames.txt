@@ -1,0 +1,8 @@
+INDEX VERSION 1.3+I:\Oussama_Aouni\ProPerso\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+467979961.index
+3568944002.index
+3568944002.index
+3098398076.index
+1681334360.index
+930733251.index
+1984283930.index

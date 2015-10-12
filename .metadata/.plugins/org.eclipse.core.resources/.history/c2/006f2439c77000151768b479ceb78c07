@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!--- Set this as the HTML tag in your application -->
+<script type="text/javascript" src="/AngularJSProject/angular.js"></script>
+<script type="text/javascript" src="/path/to/angular/angular-resource.js"></script>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<div ng_app="app.js"></div>
+
+</body>
+</html>

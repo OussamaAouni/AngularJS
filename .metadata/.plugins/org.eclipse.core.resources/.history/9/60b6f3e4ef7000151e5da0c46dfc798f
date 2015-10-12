@@ -1,0 +1,24 @@
+var App = angular.module("AngularJSProject", ["ngResources"]);
+
+$scope.records = [{title: "one"}, {title: "two"}, {title: "three"}];
+var ctrl = function($scope, $http, $location){
+	$location.path("/AngularJSProject/index.html");
+};
+ctrl.$inject = ["$scope", "$http", "$location"];
+
+App.config(["$routeProvider", function($routes) {
+	
+	$route.when('/', {
+		templateUrl : '/templates/home.html',
+		controller : HomeCtrl
+	});
+	
+	$route.when('/register', {
+		templateUrl :  '/templates/register.html',
+		controller : RegisterCtrl
+	});
+	
+	$routes.otherwise({
+		redirectTo :'/'
+	});
+}]);

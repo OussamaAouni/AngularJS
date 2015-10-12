@@ -1,0 +1,2 @@
+var App = angular.module('AngularJSProject', ['ngResources']);
+$scope.records = [{title:'one'},{title:'two'},{title:'three'}];

@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html data-ng_app="AngularJSProject">
+<head>
+<script type="text/javascript" src="/AngularJSProject/angular.js"></script>
+<script type="text/javascript" src="/AngularJSProject/angular-resource.js"></script>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+</body>
+</html>

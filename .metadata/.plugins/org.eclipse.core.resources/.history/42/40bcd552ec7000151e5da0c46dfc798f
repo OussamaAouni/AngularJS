@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html data-ng_app="AngularJSProject">
+<head>
+<script type="text/javascript" src="angular.js"></script>
+<script type="text/javascript" src="angular-resource.js"></script>
+<meta charset="ISO-8859-1">
+<title>AngularJSProject</title>
+</head>
+<body>
+	<div class="recods"
+		data-ng-repeat="record in records | orderBy:orderProp">
+		<h5>{{record.title}}</h5>
+	</div>
+</body>
+</html>
